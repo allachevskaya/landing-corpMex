@@ -1,0 +1,524 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 65px;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.comeback {
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+.businessManagementCompany__wrapper {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+.businessManagementCompany__container {
+  width: 100%;
+  margin: 0 250px;
+  border: 1px solid blue;
+}
+.businessManagementCompany__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+  color: #021B58;
+}
+.businessManagementCompany__text-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 46px;
+}
+.businessManagementCompany__text-subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+.businessManagementCompany__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+.businessManagementCompany__info-box {
+  display: grid;
+  grid-template-columns: 112px 217px;
+  gap: 13px;
+  align-items: center;
+}
+.businessManagementCompany__info-box-circle {
+  width: 112px !important;
+  height: 112px !important;
+  background: rgba(146, 209, 254, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.businessManagementCompany__info-box-circle img {
+  width: 50px;
+  height: 50px;
+}
+.businessManagementCompany__info-box p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #021B58;
+}
+
+.info__box-littleText {
+  width: 50%;
+}
+
+@media (max-width: 1257px) {
+  .businessManagementCompany__container {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .businessManagementCompany__info {
+    gap: 10px;
+  }
+}
+@media (max-width: 1095px) {
+  .businessManagementCompany__text-title {
+    font-size: 40px;
+  }
+  .businessManagementCompany__text-subtitle {
+    font-size: 31px;
+  }
+  .businessManagementCompany__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .businessManagementCompany__info-box {
+    width: 400px;
+  }
+}
+@media (max-width: 817px) {
+  .businessManagementCompany__text {
+    gap: 40px;
+  }
+  .businessManagementCompany__text-title {
+    font-size: 35px;
+  }
+  .businessManagementCompany__text-subtitle {
+    font-size: 29px;
+  }
+}
+@media (max-width: 649px) {
+  .businessManagementCompany__text {
+    gap: 30px;
+  }
+  .businessManagementCompany__text-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .businessManagementCompany__text-subtitle {
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .businessManagementCompany__info-box {
+    display: grid;
+    grid-template-columns: 80px auto;
+    width: 100%;
+    gap: 13px;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 0.4px solid #021B58;
+  }
+  .businessManagementCompany__info-box-circle {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .businessManagementCompany__info-box-circle img {
+    width: 40px;
+    height: 40px;
+  }
+  .businessManagementCompany__info-box p {
+    font-size: 21px;
+    line-height: 34px;
+    width: 80%;
+  }
+}
+/*form*/
+.businessManagementCompany__form {
+  background-image: linear-gradient(to right, rgba(0, 45, 114, 0.5), rgba(0, 45, 114, 0.5)), url("../../images/background waves.png");
+  height: 326px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.businessManagementCompany__form-control {
+  display: grid;
+  height: 306px;
+  grid-template-columns: 327px 473.92px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.businessManagementCompany__form-control h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+.businessManagementCompany__form-control-input {
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.businessManagementCompany__form-control-input button {
+  background: #F59A1E;
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  border: none;
+  outline: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 20px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.businessManagementCompany__form-control-input input {
+  outline: none;
+  border-radius: 10px;
+  border: 0;
+  padding-left: 10px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 946px) {
+  .businessManagementCompany__form-control {
+    grid-template-columns: 287px 323.92px;
+  }
+  .businessManagementCompany__form-control h3 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .businessManagementCompany__form-control-input button {
+    padding: 15px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 730px) {
+  .businessManagementCompany__form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .businessManagementCompany__form-control h3 {
+    text-align: center;
+    width: 300px;
+  }
+}
+@media (max-width: 486px) {
+  .businessManagementCompany__form-control-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: initial;
+  }
+  .businessManagementCompany__form-control-input input {
+    padding: 15px;
+  }
+  .businessManagementCompany__form-control h3 {
+    width: 255px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+  }
+}
+/*businessManagementCompany__subtitle*/
+.businessManagementCompany__subtitle {
+  display: flex;
+  justify-content: center;
+}
+.businessManagementCompany__subtitle p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  /* or 183% */
+  text-align: center;
+  color: #021B58;
+  max-width: 609px;
+}
+
+@media (max-width: 660px) {
+  .businessManagementCompany__subtitle p {
+    line-height: 37px;
+  }
+}
+/*businessManagementCompany__list*/
+.businessManagementCompany__list-items {
+  max-width: 609px;
+  margin-top: 40px;
+  background: rgba(146, 209, 254, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+.businessManagementCompany__list-items-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  gap: 18px;
+}
+.businessManagementCompany__list-items-item p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #021B58;
+}
+.businessManagementCompany__list-items-item img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 649px) {
+  .businessManagementCompany__list-items-item p {
+    font-size: 21px;
+  }
+}
+/*businessManagementCompany__subtitle__long*/
+.businessManagementCompany__subtitle__long {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.businessManagementCompany__subtitle__long p {
+  max-width: 860px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 51px;
+  text-align: center;
+  color: #021B58;
+}
+
+@media (max-width: 833px) {
+  .businessManagementCompany__subtitle__long p {
+    max-width: 576px;
+    line-height: 43px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  .businessManagementCompany__subtitle__long p {
+    list-style: 38px;
+  }
+}
+/*businessManagementCompany__benefits*/
+.businessManagementCompany__benefits-boxes {
+  margin-top: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 100px;
+  justify-content: center;
+}
+.businessManagementCompany__benefits-boxes-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.businessManagementCompany__benefits-boxes-box-circle {
+  width: 112px !important;
+  height: 112px !important;
+  background: rgba(146, 209, 254, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.businessManagementCompany__benefits-boxes-box-circle img {
+  width: 50px;
+  height: 50px;
+}
+.businessManagementCompany__benefits-boxes-box-text {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.businessManagementCompany__benefits-boxes-box-text-number {
+  font-weight: 600;
+  font-size: 63.6554px;
+  color: #F59A1E;
+  margin-top: -14px;
+}
+.businessManagementCompany__benefits-boxes-box-text h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  /* or 142% */
+  display: flex;
+  align-items: center;
+  color: #021B58;
+}
+
+@media (max-width: 950px) {
+  .businessManagementCompany__benefits-boxes {
+    gap: 20px;
+  }
+}
+@media (max-width: 744px) {
+  .businessManagementCompany__benefits-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 27px;
+  }
+  .businessManagementCompany__benefits-boxes-box {
+    width: 300px;
+    display: flex;
+  }
+  .businessManagementCompany__benefits-boxes-box-text h3 {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .businessManagementCompany__benefits-boxes-box-text-number {
+    font-size: 45.6554px;
+    margin-top: -6px;
+  }
+}
+/*businessManagementCompany__services*/
+.businessManagementCompany__services-btns {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  padding: 20px;
+}
+.businessManagementCompany__services-btns-btn {
+  max-width: 800px;
+  display: flex;
+  gap: 40px;
+}
+
+.businessManagementCompany__services-btn-long,
+.businessManagementCompany__services-btn-short {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.115661px;
+  line-height: 30px;
+  color: #021B58;
+  background: rgba(146, 209, 254, 0.2);
+  border-radius: 10px;
+  padding: 20px 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.businessManagementCompany__services-btn-long:hover,
+.businessManagementCompany__services-btn-short:hover {
+  color: #FFFFFF;
+  background-color: #F59A1E;
+}
+
+@media (max-width: 526px) {
+  .businessManagementCompany__services-btns-btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .businessManagementCompany__services-btn-long,
+.businessManagementCompany__services-btn-short {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .businessManagementCompany__services-btns {
+    margin-top: 25px;
+    gap: 20px;
+  }
+}
+/*general*/
+.businessManagementCompany__services,
+.businessManagementCompany__benefits,
+.businessManagementCompany__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.businessManagementCompany__container > * {
+  margin: 200px 0;
+}
+
+@media (max-width: 649px) {
+  .businessManagementCompany__container > * {
+    margin: 110px 0;
+  }
+}
+.businessManagementCompany__title {
+  max-width: 609px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #021B58;
+}
+
+@media (max-width: 649px) {
+  .businessManagementCompany__title {
+    font-size: 30px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=businessManagementCompany.css.map */

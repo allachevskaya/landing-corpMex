@@ -1,0 +1,228 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.comprehensiveTraining__wrapper {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  color: #021B58;
+}
+.comprehensiveTraining__container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 250px;
+  border: 1px solid red;
+}
+
+.comprehensiveTraining {
+  border: 1px solid blue;
+  margin: 150px 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media (max-width: 1555px) {
+  .comprehensiveTraining__container {
+    margin: 0;
+    padding: 20px;
+  }
+}
+@media (max-width: 625px) {
+  .comprehensiveTraining {
+    margin: 100px 0;
+  }
+}
+/*text*/
+.comprehensiveTraining__text {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+.comprehensiveTraining__text h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  max-width: 800px;
+}
+.comprehensiveTraining__text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  color: #021B58;
+  max-width: 900px;
+}
+
+@media (max-width: 1019px) {
+  .comprehensiveTraining__text {
+    gap: 45px;
+  }
+  .comprehensiveTraining__text h2 {
+    font-size: 37px;
+    line-height: 53px;
+    max-width: 724px;
+  }
+}
+/*list*/
+.comprehensiveTraining__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.comprehensiveTraining__list-items {
+  width: 90%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.comprehensiveTraining__list-items-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.comprehensiveTraining__list-items-item img {
+  width: 40px;
+  height: 40px;
+}
+.comprehensiveTraining__list-items-item p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+.comprehensiveTraining-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  /* identical to box height, or 128% */
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+@media (max-width: 625px) {
+  .comprehensiveTraining-title {
+    font-size: 29px;
+  }
+  .comprehensiveTraining__list-items {
+    width: 100%;
+  }
+  .comprehensiveTraining__list-items-item p {
+    font-size: 21px;
+    line-height: 32px;
+    padding: 0px 10px;
+  }
+}
+/*Что мы делаем для подготовки объекта к продаже на Ваших условиях ?*/
+.comprehensiveTraining-boxes {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.comprehensiveTraining-boxes-box {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 40px;
+}
+.comprehensiveTraining-boxes-box-lable {
+  display: grid;
+  grid-template-columns: 100px 21px auto;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.comprehensiveTraining-boxes-box-lable-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(146, 209, 254, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comprehensiveTraining-boxes-box-lable-circle img {
+  width: 50px;
+  height: 50px;
+}
+.comprehensiveTraining-boxes-box-lable-number {
+  font-weight: 600;
+  font-size: 63.6554px;
+  line-height: 83px;
+  text-align: center;
+  color: #F59A1E;
+}
+.comprehensiveTraining-boxes-box-lable-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.comprehensiveTraining-boxes-box-list {
+  margin: 0;
+}
+.comprehensiveTraining-boxes-box-list-item {
+  align-items: center;
+}
+.comprehensiveTraining-boxes-box-list-item img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1092px) {
+  .comprehensiveTraining-boxes-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comprehensiveTraining-boxes-box-list {
+    max-width: 640px;
+  }
+  .comprehensiveTraining__list-items-item p {
+    font-size: 23px;
+    line-height: 37px;
+  }
+  .comprehensiveTraining-boxes-box-lable {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+@media (max-width: 715px) {
+  .comprehensiveTraining-boxes {
+    gap: 100px;
+  }
+  .comprehensiveTraining-boxes-box-lable {
+    display: flex;
+    flex-direction: column;
+  }
+  .comprehensiveTraining-boxes-box-lable-number {
+    display: none;
+  }
+  .comprehensiveTraining-boxes-box-lable-text {
+    max-width: 360px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=comprehensiveTraining.css.map */

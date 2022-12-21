@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #021B58
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.comeback {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: #fafafa;
+    font-size: 20px;
+}
+
+
+
+.liquidationOfLegalEntity {
+    &__wrapper {
+        width: 100%;
+        height: max-content;
+        background-color: #E5E5E5;
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat';
+
+    }
+
+    &__container {
+        width: 100%;
+        margin: 0 250px;
+        border: 1px solid blue;
+    }
+
+    &__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        justify-content: space-between;
+        align-items: center;
+        color: #021B58;
+        margin-bottom: 100px;
+
+        &-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 46px;
+        }
+    }
+}
+
+
+
+/*info*/
+
+.liquidationOfLegalEntity__info {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: minmax(480px, 580px) minmax(500px, 1fr);
+    gap: 50px;
+    height: max-content;
+
+    &-img {
+        background: url('https://images.unsplash.com/photo-1664574653006-4d7eb5f1a418?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+        border-radius: 10px;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+
+        & h4 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 38px;
+        }
+    }
+}
+
+
+
+@media (max-width:1039px) {
+
+    .liquidationOfLegalEntity__info-text {
+        margin-bottom: 0px;
+    }
+
+    .liquidationOfLegalEntity__info {
+        display: flex;
+        flex-direction: column;
+
+        &-img {
+            height: 490px;
+        }
+    }
+
+    .liquidationOfLegalEntity__info-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        & h4 {
+            text-align: center;
+            max-width: 487px;
+        }
+
+        & p {
+            text-align: center;
+            padding: 20px 40px 20px;
+
+        }
+    }
+
+    .liquidationOfLegalEntity__text-title {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .liquidationOfLegalEntity__info-img {
+        height: 300px;
+    }
+}
+
+
+
+
+@media (max-width:600px) {
+    .liquidationOfLegalEntity__info-text {
+        & h4 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        & p {
+            padding: 20px 23px;
+            font-size: 21px;
+            line-height: 32px;
+            text-align: start;
+        }
+    }
+}
+
+
+
+
+/*liquidationOfLegalEntity__list*/
+
+.liquidationOfLegalEntity__list {
+    display: grid;
+    grid-template-columns: 524px 650px;
+    justify-content: space-around;
+
+    &-title h4 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 38px;
+        color: #021B58;
+    }
+
+}
+
+.liquidationOfLegalEntity__list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & img {
+            width: 30px;
+            height: 30px;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+}
+
+
+@media (max-width:1181px) {
+    .liquidationOfLegalEntity__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        &-title h4 {
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        &-items {
+            max-width: 600px;
+            margin-top: 40px;
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .liquidationOfLegalEntity__list-title h4 {
+        font-size: 21px;
+        line-height: 32px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+/*form*/
+
+.liquidationOfLegalEntity {
+
+    &__form {
+        background-image: linear-gradient(to right, rgba(0, 45, 114, 0.5), rgba(0, 45, 114, 0.5)), url('../../images/background\ waves.png');
+        height: 326px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+
+        &-control {
+            display: grid;
+            height: 306px;
+            grid-template-columns: 327px 473.92px;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            & h3 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 46px;
+                color: #FFFFFF;
+            }
+
+            &-input {
+                background: #FFFFFF;
+                border-radius: 10px;
+                display: flex;
+                height: max-content;
+
+                & button {
+                    background: #F59A1E;
+                    height: 100%;
+                    width: 100%;
+                    outline: 0;
+                    border: none;
+                    outline: 0;
+                    color: #FFFFFF;
+                    font-weight: 700;
+                    padding: 20px 0;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+
+                & input {
+                    outline: none;
+                    border-radius: 10px;
+                    border: 0;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+button:focus {
+    outline: 0;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+
+@media (max-width:946px) {
+    .liquidationOfLegalEntity__form-control {
+        grid-template-columns: 287px 323.92px;
+
+        & h3 {
+            font-size: 30px;
+            line-height: 39px;
+        }
+
+        &-input {
+            & button {
+                padding: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:730px) {
+    .liquidationOfLegalEntity__form-control {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h3 {
+            text-align: center;
+            width: 300px;
+        }
+    }
+
+}
+
+@media (max-width:486px) {
+    .liquidationOfLegalEntity__form-control-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: initial;
+
+        & input {
+            padding: 15px;
+        }
+    }
+
+    .liquidationOfLegalEntity__form-control h3 {
+        width: 255px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 35px;
+    }
+}
+
+
+/*liquidationOfLegalEntity__services*/
+
+.liquidationOfLegalEntity__services {
+    &-btns {
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+        padding: 20px;
+
+        &-btn {
+            max-width: 800px;
+            display: flex;
+            gap: 40px;
+
+
+        }
+    }
+}
+
+
+.liquidationOfLegalEntity__services-btn-long,
+.liquidationOfLegalEntity__services-btn-short {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 14px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.115661px;
+    line-height: 30px;
+    color: #021B58;
+
+    background: rgba(146, 209, 254, 0.2);
+    border-radius: 10px;
+    padding: 20px 30px;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.liquidationOfLegalEntity__services-btn-long:hover,
+.liquidationOfLegalEntity__services-btn-short:hover {
+    color: #FFFFFF;
+    background-color: #F59A1E;
+
+}
+
+
+@media (max-width:526px) {
+    .liquidationOfLegalEntity__services-btns-btn {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .liquidationOfLegalEntity__services-btn-long,
+    .liquidationOfLegalEntity__services-btn-short {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .liquidationOfLegalEntity__services-btns {
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+}
+
+
+
+/*general*/
+
+.liquidationOfLegalEntity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    color: #021B58;
+    width: 100%;
+   
+
+}
+
+.liquidationOfLegalEntity-btn {
+    background: #F59A1E;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding: 18px 30px;
+    text-decoration: none;
+    color: #E5E5E5;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+.liquidationOfLegalEntity__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.liquidationOfLegalEntity__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+
+    & p {
+        max-width: 1000px;
+    }
+
+}
+
+.liquidationOfLegalEntity__container>* {
+    margin: 160px 0;
+}
+
+@media (max-width:1039px) {
+    .liquidationOfLegalEntity__container {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .liquidationOfLegalEntity__container>* {
+        margin: 200px 0;
+    }
+
+    .liquidationOfLegalEntity {
+        gap: 0
+    }
+}
+
+@media (max-width:649px) {
+    .liquidationOfLegalEntity__container>* {
+        margin: 110px 0;
+    }
+}
+
+@media (max-width:600px) {
+    .liquidationOfLegalEntity__title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .liquidationOfLegalEntity__subtitle p {
+        padding: 20px 23px;
+        font-size: 21px;
+        line-height: 32px;
+        text-align: start;
+    }
+}
