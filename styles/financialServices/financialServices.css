@@ -441,4 +441,105 @@ financialServices__lists
     margin-top: 25px;
     gap: 20px;
   }
+}
+.financialServices__form {
+  background-image: linear-gradient(to right, rgba(0, 45, 114, 0.5), rgba(0, 45, 114, 0.5)), url("../../images/background waves.png");
+  height: 326px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.financialServices__form-control {
+  display: grid;
+  height: 306px;
+  grid-template-columns: 327px 473.92px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.financialServices__form-control h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+.financialServices__form-control-input {
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.financialServices__form-control-input button {
+  background: #F59A1E;
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  border: none;
+  outline: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 20px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.financialServices__form-control-input input {
+  outline: none;
+  border-radius: 10px;
+  border: 0;
+  padding-left: 10px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 946px) {
+  .financialServices__form-control {
+    grid-template-columns: 287px 323.92px;
+  }
+  .financialServices__form-control h3 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .financialServices__form-control-input button {
+    padding: 15px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 730px) {
+  .financialServices__form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .financialServices__form-control h3 {
+    text-align: center;
+    width: 300px;
+  }
+}
+@media (max-width: 486px) {
+  .financialServices__form-control-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: initial;
+  }
+  .financialServices__form-control-input input {
+    padding: 15px;
+  }
+  .financialServices__form-control h3 {
+    width: 255px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+  }
 }/*# sourceMappingURL=financialServices.css.map */
