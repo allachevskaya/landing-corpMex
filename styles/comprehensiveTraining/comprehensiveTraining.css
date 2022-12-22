@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #021B58;
+}
+
 .comprehensiveTraining__wrapper {
   width: 100%;
   height: -webkit-max-content;
@@ -23,11 +28,9 @@
   height: -moz-max-content;
   height: max-content;
   margin: 0 250px;
-  border: 1px solid red;
 }
 
 .comprehensiveTraining {
-  border: 1px solid blue;
   margin: 150px 0;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -224,5 +227,90 @@
   .comprehensiveTraining-boxes-box-lable-text {
     max-width: 360px;
     text-align: center;
+  }
+}
+/*comprehensiveTraining__description*/
+.comprehensiveTraining__description {
+  display: flex;
+  justify-content: center;
+}
+.comprehensiveTraining__description h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  max-width: 766px;
+}
+
+.comprehensiveTraining__description:last-child {
+  margin-top: 50px;
+}
+
+@media (max-width: 779px) {
+  .comprehensiveTraining__description h5 {
+    font-size: 23px;
+    line-height: 37px;
+  }
+}
+@media (max-width: 779px) {
+  .comprehensiveTraining__text h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+/*comprehensiveTraining__services*/
+.comprehensiveTraining__services-btns {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  padding: 20px;
+}
+.comprehensiveTraining__services-btns-btn {
+  max-width: 800px;
+  display: flex;
+  gap: 40px;
+}
+
+.comprehensiveTraining__services-btn-long,
+.comprehensiveTraining__services-btn-short {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.115661px;
+  line-height: 30px;
+  color: #021B58;
+  background: rgba(146, 209, 254, 0.2);
+  border-radius: 10px;
+  padding: 20px 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.comprehensiveTraining__services-btn-long:hover,
+.comprehensiveTraining__services-btn-short:hover {
+  color: #FFFFFF;
+  background-color: #F59A1E;
+}
+
+@media (max-width: 526px) {
+  .comprehensiveTraining__services-btns-btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .comprehensiveTraining__services-btn-long,
+.comprehensiveTraining__services-btn-short {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .comprehensiveTraining__services-btns {
+    margin-top: 25px;
+    gap: 20px;
   }
 }/*# sourceMappingURL=comprehensiveTraining.css.map */

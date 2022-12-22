@@ -42,7 +42,6 @@ header {
     &__container {
         width: 100%;
         margin: 0 250px;
-        border: 1px solid blue;
     }
 
     &__text {
@@ -520,7 +519,7 @@ button:active {
 
 @media (max-width:649px) {
     .liquidationOfLegalEntity__container>* {
-        margin: 110px 0;
+        margin: 67px 0;
     }
 }
 
