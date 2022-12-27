@@ -1,0 +1,710 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: #081B54;
+  border: 1px solid lime;
+}
+
+.wrapper__stateProcurements {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.section__main {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.stateProcurements__main {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 200px;
+  background: #081B54;
+  border-radius: 0px 0px 18.8045px 18.8045px;
+}
+.stateProcurements__main-title {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 619px 258px;
+  color: #FFFFFF;
+  gap: 20px;
+}
+.stateProcurements__main-title h2 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 68px;
+  text-transform: uppercase;
+}
+.stateProcurements__main-title span {
+  font-weight: 100 !important;
+  font-size: 17.5227px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-left: 50%;
+  position: relative;
+  top: 47px;
+}
+.stateProcurements__main-title h4 {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1529px) {
+  .stateProcurements__main {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1085px) {
+  .stateProcurements__main {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stateProcurements__main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding-top: 40px;
+    width: 500px;
+  }
+  .stateProcurements__main-title span {
+    display: none;
+  }
+  .stateProcurements__main-title h2 {
+    text-align: center;
+    font-size: 48px;
+  }
+  .stateProcurements__main-title h4 {
+    text-align: end;
+    font-size: 25px;
+  }
+}
+@media (max-width: 685px) {
+  .stateProcurements__main-title {
+    width: 400px;
+  }
+  .stateProcurements__main-title h2 {
+    line-height: 56px;
+    font-size: 40px;
+    display: flex;
+  }
+  .stateProcurements__main-title h4 {
+    line-height: 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .stateProcurements__main-title {
+    width: 100%;
+  }
+  .stateProcurements__main-title h2 {
+    line-height: 35px;
+    font-size: 27px;
+    justify-content: center;
+  }
+  .stateProcurements__main-title h4 {
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
+.stateProcurements__main-boxes {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 80px;
+}
+.stateProcurements__main-boxes-box {
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 273px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 26px 26px 40px;
+  gap: 10px;
+  transition: all 0.8s ease;
+}
+.stateProcurements__main-boxes-box-img {
+  height: 178px;
+  height: 198px;
+  /* width: 182px; */
+  margin: 0 auto;
+  padding: 9px 15px;
+}
+.stateProcurements__main-boxes-box-img img {
+  width: 100%;
+  height: 100%;
+}
+.stateProcurements__main-boxes-box-arrow {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: 9px;
+  left: -2px;
+}
+.stateProcurements__main-boxes-box h5 {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid yellow;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stateProcurements__main-boxes-box:hover {
+  transform: scale(0.9);
+}
+
+@media (max-width: 1085px) {
+  .stateProcurements__main-boxes {
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 883px) {
+  .stateProcurements__main-boxes-box {
+    width: 214px;
+    padding: 13px;
+  }
+  .stateProcurements__main-boxes-box-img {
+    width: 135px;
+    height: 131px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 729px) {
+  .stateProcurements__main-boxes {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .stateProcurements__main-boxes-box {
+    width: 271px;
+    padding: 40px;
+  }
+}
+.stateProcurements {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 900px) {
+  .stateProcurements {
+    margin-bottom: 100px;
+  }
+}
+.stateProcurements__container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px 200px;
+  color: #081B54;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.stateProcurements__container-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+.stateProcurements__container-content {
+  display: flex;
+  justify-content: space-between;
+}
+.stateProcurements__container-content-box {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.8s ease;
+}
+.stateProcurements__container-content-box img {
+  width: 75.5px;
+  height: 86px;
+}
+.stateProcurements__container-content-box p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  height: 83px;
+}
+.stateProcurements__container-content-box:hover {
+  transform: scale(0.9);
+}
+.stateProcurements__container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1529px) {
+  .stateProcurements__container {
+    padding: 20px 100px;
+  }
+}
+@media (max-width: 1085px) {
+  .stateProcurements__container {
+    padding: 20px;
+  }
+  .stateProcurements__container-conent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 811px) {
+  .stateProcurements__container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+
+.stateProcurements__container__services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.stateProcurements__container__services-title {
+  display: flex;
+  align-items: center;
+  max-width: 324px;
+  gap: 20px;
+}
+.stateProcurements__container__services-title-line {
+  width: 60px;
+  height: 1px;
+  background-color: #081B54;
+}
+.stateProcurements__container__services-title p {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
+  color: #081B54;
+}
+.stateProcurements__container__services-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.stateProcurements__container__services-boxes-box {
+  border: 1px solid rgba(182, 178, 178, 0.5);
+  border-radius: 13px;
+  padding: 24px 12px;
+  width: 300px;
+  transition: all 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.stateProcurements__container__services-boxes-box p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #081B54;
+}
+.stateProcurements__container__services-boxes-box:hover {
+  transform: scale(0.96);
+}
+
+.stateProcurements__container__services-boxes-box-orangeText {
+  color: #F59A1F !important;
+}
+
+@media (max-width: 985px) {
+  .stateProcurements__container__services-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .stateProcurements__container__services-boxes-box {
+    width: 270px;
+  }
+}
+.stateProcurements__container-title-line {
+  border-bottom: 1px solid #081B54;
+  padding-bottom: 40px;
+}
+
+.__stateProcurements__container-content-longBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #081B54;
+}
+.__stateProcurements__container-content-longBox-box {
+  width: 210px;
+}
+
+@media (max-width: 843px) {
+  .__stateProcurements__container-content-longBox {
+    padding: 28px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .__stateProcurements__container-content-longBox-box {
+    flex: 1 1 260px;
+    padding: 20px 0;
+    border: 1px solid rgba(8, 27, 84, 0.1725490196);
+  }
+  .__stateProcurements__container-content-longBox-box p {
+    height: auto;
+  }
+}
+.stateProcurements__risks {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 20px;
+  color: #081B54;
+}
+.stateProcurements__risks-title {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+.stateProcurements__risks-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+.stateProcurements__risks-boxes-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+.stateProcurements__risks-boxes-box-text {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  height: 100px;
+}
+.stateProcurements__risks-boxes-box-text p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: start;
+  color: #081B54;
+  width: 170px;
+}
+.stateProcurements__risks-boxes-box-text-number {
+  color: #F59A1F;
+  font-size: 50px;
+}
+
+@media (max-width: 725px) {
+  .stateProcurements__risks-boxes-box {
+    border: 1px solid rgba(8, 27, 84, 0.1725490196);
+  }
+  .stateProcurements__risks-boxes {
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .stateProcurements__risks-boxes {
+    gap: 50px;
+  }
+}
+.stateProcurements__risks-boxes-box {
+  transition: all 0.4s ease-in-out;
+}
+
+.stateProcurements__risks-boxes-box:hover {
+  border: 1px solid rgba(8, 27, 84, 0.1725490196);
+}
+
+.stateProcurements__customerActions {
+  color: #081B54;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stateProcurements__customerActions-title {
+  max-width: 682px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin: 50px 0;
+}
+.stateProcurements__customerActions-lists {
+  padding: 0px 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.stateProcurements__customerActions-lists-list {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(8, 27, 84, 0.1725490196);
+  width: 100%;
+  border-radius: 10px;
+}
+.stateProcurements__customerActions-lists-list p, .stateProcurements__customerActions-lists-list li {
+  font-size: 21px;
+  line-height: 33px;
+}
+.stateProcurements__customerActions-lists-list li {
+  margin-left: 15px;
+}
+.stateProcurements__customerActions-lists-list p {
+  margin: 10px 0;
+}
+.stateProcurements__customerActions-lists-list-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.stateProcurements__customerActions-lists-list-text p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.stateProcurements__customerActions-lists-list-text img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1362px) {
+  .stateProcurements__customerActions-lists {
+    padding: 0px 100px;
+  }
+  .stateProcurements__customerActions-lists-list {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 911px) {
+  .stateProcurements__customerActions-lists-list-text {
+    padding: 28px;
+  }
+  .stateProcurements__customerActions-title {
+    padding: 10px 20px;
+  }
+  .stateProcurements__customerActions-lists {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .stateProcurements__customerActions-lists-list-text p {
+    font-size: 20px;
+  }
+  .stateProcurements__customerActions-lists-list-text {
+    gap: 15px;
+  }
+  .stateProcurements__customerActions-lists-list {
+    padding: 20px;
+  }
+  .stateProcurements__risks-boxes-box {
+    padding: 24px;
+    gap: 0;
+  }
+  .stateProcurements__risks-boxes-box-text {
+    gap: 25px;
+    align-items: flex-end;
+  }
+}
+.stateProcurements__customerActions-lists-list-ul__open {
+  display: none;
+}
+
+.stateProcurements__information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 100px;
+  gap: 100px;
+}
+.stateProcurements__information-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  color: #081B54;
+}
+.stateProcurements__information-box p, .stateProcurements__information-box ul li {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: start;
+  color: #081B54;
+}
+.stateProcurements__information-box li {
+  margin: 20px 50px;
+}
+
+@media (max-width: 1093px) {
+  .stateProcurements__information {
+    gap: 38px;
+    padding: 20px;
+  }
+}
+@media (max-width: 823px) {
+  .stateProcurements__information {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .stateProcurements__information-box ul li {
+    margin: 10px 0 10px 30px;
+  }
+}
+.__stateProcurements__form {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-image: linear-gradient(to right, rgba(0, 45, 114, 0.5), rgba(0, 45, 114, 0.5)), url(../../images/background\ waves.png);
+  background-size: cover;
+  padding: 50px 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+}
+.__stateProcurements__form-text {
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  line-height: 33px;
+}
+.__stateProcurements__form-text p:last-child {
+  max-width: 800px;
+}
+.__stateProcurements__form-form {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  width: 70%;
+}
+.__stateProcurements__form-form-text h5 {
+  color: #FFFFFF;
+  font-size: 35px;
+  line-height: 50px;
+  height: 100%;
+}
+.__stateProcurements__form-form-text span {
+  color: #F59A1F;
+}
+.__stateProcurements__form-form-input {
+  margin: auto 0;
+  border: 1px solid red;
+}
+
+@media (max-width: 1555px) {
+  .__stateProcurements__form-form {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 1119px) {
+  .__stateProcurements__form-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 675px) {
+  .__stateProcurements__form-form-text h5 {
+    text-align: center;
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 505px) {
+  .__stateProcurements__form {
+    gap: 50px;
+  }
+  .__stateProcurements__form {
+    padding: 40px 15px;
+  }
+}
+.stateProcurements__lastTitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #0B193A;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 50px;
+}
+
+@media (max-width: 900px) {
+  .stateProcurements__lastTitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 659px) {
+  .stateProcurements__lastTitle {
+    font-size: 22px;
+    line-height: 33px;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=stateProcurements.css.map */
