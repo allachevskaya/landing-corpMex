@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 
@@ -32,7 +33,7 @@
 
         display: grid;
         grid-template-columns: minmax(300px, 580px) minmax(300px, 472px);
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: 20px;
 
         background-color: #001339;
@@ -80,7 +81,7 @@
                 font-size: 22px;
                 line-height: 27px;
                 text-align: center;
-
+                padding: 0 15px;
                 color: #081B54;
             }
 
@@ -196,10 +197,10 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        padding-top: 100px;
+        gap: 80px;
+        padding: 80px;
         color: #FFFFFF;
-        font-family: 'Montserrat';
+        height: max-content;
 
         &-title {
             text-align: center;
@@ -209,45 +210,94 @@
             text-align: center;
             text-transform: uppercase;
         }
-        &-subtitle{
-            text-align: center;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 33px;
-            text-align: center;
-            
-            display: flex;
-            justify-content: center;
-            & p{
-                max-width: 1200px;
-            }
-        }
 
         &-slider {
-       
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: minmax(350px,500px) minmax(400px,600px);
+            justify-content: space-evenly;
+            gap: 20px;
+
+            &-text {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+            }
 
             &-scroll {
-               
-                // max-width: 800px;
-                display: grid;
-                grid-template-columns: 20px minmax(300px,1200px) 20px;
-                min-height: 417px;
-                align-items: center;
-                gap: 45px;
+                display: flex;
+                justify-content: flex-start;
+                gap: 40px;
+                min-height: 312px;
 
                 & p {
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 24px;
-                    text-align: center;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 27px;
                 }
 
                 & img {
-                    width: 100%;
-                    cursor: pointer;
+                    width: 15px;
+                    height: 15px;
+                    margin-top: 40px;
                 }
+                &-title{
+                    display: none;
+                }
+            }
+        }
+
+
+
+    }
+    &-page4{
+        padding: 80px ;
+        display: flex;
+        flex-wrap: wrap;
+        gap:40px;
+        justify-content: center;
+        align-items: center;
+        &-box{
+            width: 270px;
+            height: 170px;
+            background: rgba(252, 185, 0, 0.8);
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            & p{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                text-transform: uppercase;
+                padding: 40px;
+                color: #081B54;
+                padding: 20px;
+                    text-align: center;
+            }
+        }
+    }
+    &-page5{
+        padding: 80px;
+        &-title{
+            text-align: center;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &-images{
+            padding-top: 80px;
+            display: grid;
+         
+            gap:20px;
+            justify-content: center;
+            grid-template-columns:  minmax(150px,400px) minmax(300px,700px) minmax(150px,400px) ;
+          
+            align-items: center;
+            & img{
+                width: 100%;
             }
         }
     }
@@ -258,6 +308,7 @@
     .liquidation {
         &-page1 {
             padding: 180px 20px;
+            
             grid-template-columns: repeat(auto-fill, 300px);
             justify-content: center;
 
@@ -322,14 +373,34 @@
             &-slider {
                 grid-template-columns: repeat(auto-fill, 100%);
                 justify-content: center;
-                gap: 40px;
-                position: relative;
+               
+                gap: 180px;
 
                 &-scroll {
                     margin: 0 auto;
-                    grid-template-columns: 14px 325px 14px;
-                    gap: 15px;
                    
+                    gap: 15px;
+                    position: relative;
+                    display: flex;
+                    & p{
+                        min-height: 313px;
+                    }
+                    &-title{
+                        display: flex;
+                        position: absolute;
+                        top:-100px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        & h3{
+                            font-weight: 600;
+                            font-size: 30px;
+                            line-height: 37px;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+                    }
+                  
                 }
 
                 &-item {
@@ -342,40 +413,48 @@
                 }
             }
         }
+        &-page4{
+            &-box{
+                & p{
+                    font-size: 18px;
+                    line-height: 28px;
+                    padding: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        &-page5{
+            padding: 80px 20px;
+            &-images{
+                grid-template-columns: repeat(auto-fill,300px);
+                gap:50px;
+            }
+        }
     }
-  
 
 
-}
-
-
-
-
-
-@media (max-width:800px) {
-    .liquidation-page1 {
-        padding: 180px 20px;
-    }
-
-}
-
-
-@media (max-width:440px) {
-    .liquidation-page3-slider-scroll{
-        display: flex;
-    }
-    #liquidation-slider-left, #liquidation-slider-right{
+    #liquidation-slider-left,
+    #liquidation-slider-right {
         position: absolute;
         width: 14px;
-        bottom: 0;
+        top: -127px;
     }
-    #liquidation-slider-left{
-        left: 20px;
+
+    #liquidation-slider-left {
+        left: 40px;
     }
-    #liquidation-slider-right{
-        right: 20px;
+
+    #liquidation-slider-right {
+        right: 40px;
     }
+
+
+
 }
+
+
+
+
 
 .liquidation-page3-slider-close {
 

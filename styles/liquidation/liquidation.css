@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 .liquidation-page1,
@@ -27,7 +28,7 @@
 .liquidation-page1 {
   display: grid;
   grid-template-columns: minmax(300px, 580px) minmax(300px, 472px);
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
   background-color: #001339;
   color: #FFFFFF;
@@ -66,6 +67,7 @@
   font-size: 22px;
   line-height: 27px;
   text-align: center;
+  padding: 0 15px;
   color: #081B54;
 }
 .liquidation-page1-form-btn {
@@ -162,10 +164,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  padding-top: 100px;
+  gap: 80px;
+  padding: 80px;
   color: #FFFFFF;
-  font-family: "Montserrat";
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .liquidation-page3-title {
   text-align: center;
@@ -175,38 +179,84 @@
   text-align: center;
   text-transform: uppercase;
 }
-.liquidation-page3-subtitle {
-  text-align: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-.liquidation-page3-subtitle p {
-  max-width: 1200px;
-}
 .liquidation-page3-slider {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(350px, 500px) minmax(400px, 600px);
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.liquidation-page3-slider-text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
 }
 .liquidation-page3-slider-scroll {
-  display: grid;
-  grid-template-columns: 20px minmax(300px, 1200px) 20px;
-  min-height: 417px;
-  align-items: center;
-  gap: 45px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  min-height: 312px;
 }
 .liquidation-page3-slider-scroll p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
 }
 .liquidation-page3-slider-scroll img {
+  width: 15px;
+  height: 15px;
+  margin-top: 40px;
+}
+.liquidation-page3-slider-scroll-title {
+  display: none;
+}
+.liquidation-page4 {
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.liquidation-page4-box {
+  width: 270px;
+  height: 170px;
+  background: rgba(252, 185, 0, 0.8);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liquidation-page4-box p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  padding: 40px;
+  color: #081B54;
+  padding: 20px;
+  text-align: center;
+}
+.liquidation-page5 {
+  padding: 80px;
+}
+.liquidation-page5-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.liquidation-page5-images {
+  padding-top: 80px;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: minmax(150px, 400px) minmax(300px, 700px) minmax(150px, 400px);
+  align-items: center;
+}
+.liquidation-page5-images img {
   width: 100%;
-  cursor: pointer;
 }
 
 @media (max-width: 800px) {
@@ -255,39 +305,61 @@
   .liquidation-page3-slider {
     grid-template-columns: repeat(auto-fill, 100%);
     justify-content: center;
-    gap: 40px;
-    position: relative;
+    gap: 180px;
   }
   .liquidation-page3-slider-scroll {
     margin: 0 auto;
-    grid-template-columns: 14px 325px 14px;
     gap: 15px;
+    position: relative;
+    display: flex;
+  }
+  .liquidation-page3-slider-scroll p {
+    min-height: 313px;
+  }
+  .liquidation-page3-slider-scroll-title {
+    display: flex;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .liquidation-page3-slider-scroll-title h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .liquidation-page3-slider-item p {
     text-align: center;
     font-size: 17px;
     line-height: 25px;
   }
-}
-@media (max-width: 800px) {
-  .liquidation-page1 {
-    padding: 180px 20px;
+  .liquidation-page4-box p {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px;
+    text-align: center;
   }
-}
-@media (max-width: 440px) {
-  .liquidation-page3-slider-scroll {
-    display: flex;
+  .liquidation-page5 {
+    padding: 80px 20px;
   }
-  #liquidation-slider-left, #liquidation-slider-right {
+  .liquidation-page5-images {
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 50px;
+  }
+  #liquidation-slider-left,
+#liquidation-slider-right {
     position: absolute;
     width: 14px;
-    bottom: 0;
+    top: -127px;
   }
   #liquidation-slider-left {
-    left: 20px;
+    left: 40px;
   }
   #liquidation-slider-right {
-    right: 20px;
+    right: 40px;
   }
 }
 .liquidation-page3-slider-close {
