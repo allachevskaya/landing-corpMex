@@ -299,8 +299,6 @@ header {
     gap: 60px;
   }
 }
-
-
 .stateProcurements__container__services {
   display: flex;
   flex-direction: column;

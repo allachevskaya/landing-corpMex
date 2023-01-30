@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/liquidation/liquidation.css">
+    <title>liquidation</title>
+</head>
+
+<body>
+    <div class="liquidation__wrapper">
+        <div class="liquidation__container">
+            <section class="liquidation-page1">
+                <div class="liquidation-page1-text">
+                    <div class="liquidation-page1-text-title">
+                        ЛИКВИДАЦИя ЮРИДИЧЕСКОГО
+                        ЛИЦА без рисков
+                    </div>
+                    <div class="liquidation-page1-text-subtitle">Работаем с самыми сложным случаями! </div>
+                </div>
+                <div class="liquidation-page1-form">
+                    <div class="liquidation-page1-form-text">Получите консультацию опытного юриста БЕСПЛАТНО!</div>
+                    <button class="liquidation-page1-form-btn">Отправить заявку</button>
+                </div>
+            </section>
+            <section class="liquidation-page2">
+                <div class="liquidation-page2-title">
+                    <h4>Способы ликвидации бизнеса на сегодняшний день: </h4>
+                </div>
+                <div class="liquidation-page2-list1">
+                    <li>Добровольная ликвидация </li>
+                    <li>Слияние или присоединение </li>
+                    <li>Ликвидация по решению налоговой </li>
+                    <li>Банкротство</li>
+                </div>
+                <div class="liquidation-page2-list2">
+                    Все способы влекут за собой риски, связанные с доначислением налогов, шансом привлечения
+                    контролирующих лиц к субсидиарный ответственности и аннулированием отчетности компании. Все это
+                    может негативно отразиться на вас и ваших контрагентах. Наши специалисты помогут вам ликвидировать
+                    предприятие без рисков.
+                </div>
+                <div class="liquidation-page2-list3">
+                    <div class="liquidation-page2-list3-title">
+                        КАКИЕ УСЛУГИ МЫ ПРЕДОСТАВЛЯЕМ:
+                    </div>
+                    <div class="liquidation-page2-list3-list">
+                        <li>СРОЧНАЯ ПОДГОТОВКА ДОКУМЕНТОВ ОТ 5000 РУБ.</li>
+                        <li>ОФОРМЛЕНИЕ ПРОТОКОЛА ОБЩЕГО СОБРАНИЯ И СОПУТСТВУЮЩЕЙ ДОКУМЕНТАЦИИ ОТ 5000 РУБ.</li>
+                        <li>СОГЛАСОВАНИЕ ДОКУМЕНТОВ БЕЗ ОЧЕРЕДИ У НОТАРИУСА ОТ 5000 РУБ.</li>
+                    </div>
+                </div>
+            </section>
+            <section class="liquidation-page3">
+                <div class="liquidation-page3-title">
+                    Почему мы? 
+                </div>
+                <div class="liquidation-page3-subtitle">
+                  <p>  Компания “Корпоративная механика”  более 7 лет оказывает юридическую поддержку бизнесу. Мы берём на себя бухгалтерский учёт, отчётность, расчёт налогов и зарплаты, юридические вопросы, работу с налоговыми органами. Перечень услуг, ответственность сторон, прозрачность условий прописываем в договоре и соблюдаем сроки выполнения на всех этапах работы.</p>
+                </div>
+                <div class="liquidation-page3-slider">
+                
+                    <div class="liquidation-page3-slider-scroll">
+                        <img id="liquidation-slider-left" src="../images/ликвидация/leftЛиквидация.png" alt="назад">
+                        <p  >Обращался в "Корпоративную механику" по поводу ликвидации нашего ООО. Хотел узнать точный порядок и необходимые документы для процедуры. Был еще один нюанс - перед работниками образовалась небольшая задолженность, по этому поводу тоже хотелось получить консультацию, как правильно действовать. На все вопросы получил исчерпывающую информацию. Помогли заполнить формы Р15001 и Р16001, там тоже есть свои нюансы, например, переносы слов не допускаются. Большое спасибо за работу!</p>
+                        <p class="liquidation-page3-slider-close">Очень квалифицированный и грамотный юрист. Быстро нашли и оформили все недостающие документы. Сами сделалаи все необходимые документы, подсказала-какие льготы я могу оформить. Порадовола скорость оформления. Я рад, что доверил работу именно этой компнаии! Надеюсь, будем сотрудничать и дальше! </p>
+                        <p class="liquidation-page3-slider-close">Обратилась в "Корпоративную механику" за помощью в подготовке документов по закрытию ИП. Все было сделано быстро и грамотно. Буду обращаться за консультациями!</p>
+                           
+                            <img id="liquidation-slider-right" src="../images/ликвидация/rightЛиквидация.png" alt="вперед">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        const btnPred = document.querySelector('#liquidation-slider-left');
+        const btnNext = document.querySelector('#liquidation-slider-right');
+        const reviews = document.querySelectorAll('.liquidation-page3-slider-scroll p');
+        let state = 0;
+
+    getSlider();
+    function getSlider() {
+
+        const activeSlide = index => {
+
+            for (let slide of reviews) {
+                slide.classList.add('liquidation-page3-slider-close');
+            }
+            reviews[index].classList.remove('liquidation-page3-slider-close');
+        }
+
+
+        const nextSlide = () => {
+            if (state == reviews.length - 1) {
+                state = 0;
+                activeSlide(state);
+            }
+            else {
+                state++;
+                activeSlide(state);
+            }
+        }
+
+        const predSlide = () => {
+            if (state == 0) {
+                state = reviews.length - 1;
+                activeSlide(state);
+            }
+            else {
+                state--;
+                activeSlide(state);
+            }
+        }
+
+
+        btnNext.addEventListener('click', nextSlide);
+        btnPred.addEventListener('click', predSlide);
+    }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

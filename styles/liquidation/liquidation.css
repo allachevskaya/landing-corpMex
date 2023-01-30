@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.liquidation-page1,
+.liquidation-page2,
+.liquidation-page3 {
+  padding: 180px 80px;
+}
+
+.liquidation__wrapper {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+.liquidation__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid red;
+}
+.liquidation-page1 {
+  display: grid;
+  grid-template-columns: minmax(300px, 580px) minmax(300px, 472px);
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #001339;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-style: normal;
+  width: 100%;
+}
+.liquidation-page1-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.liquidation-page1-text-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+.liquidation-page1-text-subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+}
+.liquidation-page1-form {
+  background-color: #FCB900;
+  height: 242px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.liquidation-page1-form-text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #081B54;
+}
+.liquidation-page1-form-btn {
+  background-color: #081B54;
+  color: white;
+  outline: none;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: 0;
+  cursor: pointer;
+}
+.liquidation-page2 {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 40px 20px;
+  grid-template-areas: "title title" "list1 list2" "list3 list3";
+  background-color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.liquidation-page2-title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+}
+.liquidation-page2-title h4 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 600px;
+  color: #081B54;
+}
+.liquidation-page2-list1 {
+  grid-area: list1;
+}
+.liquidation-page2-list1 li {
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #081B54;
+  -webkit-text-decoration-color: #081B54;
+          text-decoration-color: #081B54;
+}
+.liquidation-page2-list2 {
+  grid-area: list2;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #082654;
+}
+.liquidation-page2-list3 {
+  grid-area: list3;
+  background: rgba(142, 209, 252, 0.17);
+  border-radius: 25px;
+  padding: 100px 20px;
+  width: 100%;
+  margin-top: 40px;
+}
+.liquidation-page2-list3-title {
+  text-align: center;
+  color: #001339;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.liquidation-page2-list3-list {
+  margin-top: 40px;
+}
+.liquidation-page2-list3-list li {
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #081B54;
+  -webkit-text-decoration-color: #081B54;
+          text-decoration-color: #081B54;
+}
+.liquidation-page3 {
+  background-color: #001339;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 100px;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+}
+.liquidation-page3-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.liquidation-page3-subtitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.liquidation-page3-subtitle p {
+  max-width: 1200px;
+}
+.liquidation-page3-slider {
+  display: flex;
+  justify-content: center;
+}
+.liquidation-page3-slider-scroll {
+  display: grid;
+  grid-template-columns: 20px minmax(300px, 1200px) 20px;
+  min-height: 417px;
+  align-items: center;
+  gap: 45px;
+}
+.liquidation-page3-slider-scroll p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.liquidation-page3-slider-scroll img {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .liquidation-page1 {
+    padding: 180px 20px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+  }
+  .liquidation-page1-text-title {
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .liquidation-page1-text-subtitle {
+    text-align: center;
+  }
+  .liquidation-page1-form-btn {
+    font-size: 17px;
+  }
+  .liquidation-page2 {
+    grid-template-areas: "title title" "list1 list1" "list2 list2" "list3 list3";
+    padding: 80px 20px;
+    gap: 20px;
+  }
+  .liquidation-page2-title h4 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .liquidation-page2-list2, .liquidation-page2-list3-title {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .liquidation-page2-list1 li, .liquidation-page2-list3-list li {
+    font-size: 15px;
+    line-height: 29px;
+  }
+  .liquidation-page2-list3 {
+    padding: 40px 20px;
+  }
+  .liquidation-page2-list3-list {
+    margin-top: 15px;
+  }
+  .liquidation-page3 {
+    padding: 80px 20px;
+  }
+  .liquidation-page3-slider {
+    grid-template-columns: repeat(auto-fill, 100%);
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+  }
+  .liquidation-page3-slider-scroll {
+    margin: 0 auto;
+    grid-template-columns: 14px 325px 14px;
+    gap: 15px;
+  }
+  .liquidation-page3-slider-item p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .liquidation-page1 {
+    padding: 180px 20px;
+  }
+}
+@media (max-width: 440px) {
+  .liquidation-page3-slider-scroll {
+    display: flex;
+  }
+  #liquidation-slider-left, #liquidation-slider-right {
+    position: absolute;
+    width: 14px;
+    bottom: 0;
+  }
+  #liquidation-slider-left {
+    left: 20px;
+  }
+  #liquidation-slider-right {
+    right: 20px;
+  }
+}
+.liquidation-page3-slider-close {
+  display: none;
+}/*# sourceMappingURL=liquidation.css.map */
