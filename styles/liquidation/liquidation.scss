@@ -103,7 +103,8 @@ a {
                 line-height: 27px;
                 text-transform: uppercase;
                 color: #FFFFFF;
-                padding: 10px 20px;
+                padding: 12px 17px;
+
                 border: 0;
                 cursor: pointer;
             }
@@ -192,7 +193,7 @@ a {
                     font-weight: 500;
                     font-family: 'Montserrat';
                     font-size: 22px;
-                    line-height: 30px;
+                    line-height: 35px;
                     text-transform: uppercase;
                     color: #081B54;
                     text-decoration-color: #081B54;
@@ -247,7 +248,7 @@ a {
                 & img {
                     width: 15px;
                     height: 15px;
-                    margin-top: 40px;
+                    margin: auto;
                 }
 
                 &-title {
@@ -271,7 +272,7 @@ a {
         &-box {
             width: 270px;
             height: 170px;
-            background: rgba(252, 185, 0, 0.8);
+            background: #FCB900;
             border-radius: 25px;
             display: flex;
             justify-content: center;
@@ -346,12 +347,13 @@ a {
         }
 
         &-btn {
-            background: rgba(252, 185, 0, 0.8);
+            background: #FCB900;
             border-radius: 5px;
             cursor: pointer;
             outline: none;
             border: 0;
-            padding: 10px 15px;
+            padding: 12px 17px;
+
 
             & a {
                 color: #001339;
@@ -434,8 +436,8 @@ a {
     }
 }
 
-.header-nav-link:hover{
-    color:#FCB900
+.header-nav-link:hover {
+    color: #FCB900
 }
 
 .footer {
@@ -443,10 +445,11 @@ a {
     width: 100%;
     background-image: url('../../images/ликвидация/image\ 8.png');
     display: grid;
-    padding: 100px 80px 80px;;
+    padding: 100px 80px 80px;
+    ;
     grid-template-columns: minmax(263px, 314px) minmax(252px, 318px) minmax(205px, 276px);
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
 
     &-logo {
         cursor: pointer;
@@ -470,7 +473,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 25px;
-        
+
 
         &-title {
 
@@ -480,7 +483,7 @@ a {
             font-size: 20px;
             line-height: 24px;
             text-transform: uppercase;
-
+            margin-left: 22px;
             color: #FCB900;
         }
 
@@ -499,11 +502,13 @@ a {
         display: flex;
         flex-direction: column;
         gap: 25px;
-        
+
         justify-content: space-between;
+
         &-map {
             display: grid;
             gap: 10px;
+
             & a {
                 font-family: 'Montserrat';
                 font-style: normal;
@@ -519,11 +524,13 @@ a {
             display: flex;
             justify-content: start;
             gap: 10px;
+
             & img {
                 width: 38px;
                 height: 35px;
             }
         }
+
         & p {
             font-weight: 500;
             font-size: 20px;
@@ -539,7 +546,7 @@ a {
         font-size: 22px;
         line-height: 27px;
         text-transform: uppercase;
-
+        margin-left: -5px;
         color: #FCB900;
     }
 }
@@ -566,10 +573,12 @@ a {
             font-size: 18px;
         }
     }
-    .footer{
-        &-logo{
-            gap:5px;
-            & p{
+
+    .footer {
+        &-logo {
+            gap: 5px;
+
+            & p {
                 font-size: 18px;
             }
         }
@@ -600,18 +609,20 @@ a {
             font-size: 16px;
         }
     }
-    .footer{
-        grid-template-columns: repeat(auto-fill,314px);
+
+    .footer {
+        grid-template-columns: repeat(auto-fill, 314px);
         justify-content: center;
-        gap:40px;
-        &-services{
+        gap: 40px;
+
+        &-services {
             border-bottom: 1px solid #FCB900;
             padding-bottom: 30px;
-            &-title{
-                text-align: center;
-            }
+
+           
         }
-        &-contacts-map{
+
+        &-contacts-map {
             border-bottom: 1px solid #FCB900;
             padding-bottom: 30px;
         }
@@ -642,7 +653,7 @@ a {
 
             &-form {
                 &-btn {
-                    font-size: 17px;
+                    font-size: 16px;
                 }
             }
         }
@@ -691,7 +702,7 @@ a {
 
                 justify-content: center;
 
-                gap: 180px;
+                gap: 135px;
 
                 &-scroll {
                     margin: 0 auto;
@@ -903,7 +914,8 @@ a {
     #liquidation-slider-right {
         position: absolute;
         width: 14px;
-        top: -127px;
+        top: -89px;
+        cursor: pointer;
     }
 
     #liquidation-slider-left {
@@ -944,16 +956,16 @@ a {
 
     }
 
-    .liquidation-page3{
-        gap:34px;
-
-    margin: 40px 0;
-
+    .liquidation-page3 {
+        gap: 34px;
+        margin: 40px 0;
     }
 }
 
 
-
+.__burger-nav-tel{
+    margin-top: 15px;
+}
 
 
 .liquidation-page3-slider-close {

@@ -89,7 +89,7 @@ a {
   line-height: 27px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 10px 20px;
+  padding: 12px 17px;
   border: 0;
   cursor: pointer;
 }
@@ -164,7 +164,7 @@ a {
   font-weight: 500;
   font-family: "Montserrat";
   font-size: 22px;
-  line-height: 30px;
+  line-height: 35px;
   text-transform: uppercase;
   color: #081B54;
   -webkit-text-decoration-color: #081B54;
@@ -215,7 +215,7 @@ a {
 .liquidation-page3-slider-scroll img {
   width: 15px;
   height: 15px;
-  margin-top: 40px;
+  margin: auto;
 }
 .liquidation-page3-slider-scroll-title {
   display: none;
@@ -231,7 +231,7 @@ a {
 .liquidation-page4-box {
   width: 270px;
   height: 170px;
-  background: rgba(252, 185, 0, 0.8);
+  background: #FCB900;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -297,12 +297,12 @@ a {
   color: #081B54;
 }
 .liquidation-page6-btn {
-  background: rgba(252, 185, 0, 0.8);
+  background: #FCB900;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
   border: 0;
-  padding: 10px 15px;
+  padding: 12px 17px;
 }
 .liquidation-page6-btn a {
   color: #001339;
@@ -410,6 +410,7 @@ a {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-left: 22px;
   color: #FCB900;
 }
 .footer-services-list li {
@@ -461,6 +462,7 @@ a {
   font-size: 22px;
   line-height: 27px;
   text-transform: uppercase;
+  margin-left: -5px;
   color: #FCB900;
 }
 
@@ -511,9 +513,6 @@ a {
     border-bottom: 1px solid #FCB900;
     padding-bottom: 30px;
   }
-  .footer-services-title {
-    text-align: center;
-  }
   .footer-contacts-map {
     border-bottom: 1px solid #FCB900;
     padding-bottom: 30px;
@@ -534,7 +533,7 @@ a {
     text-align: center;
   }
   .liquidation-page1-form-btn {
-    font-size: 17px;
+    font-size: 16px;
   }
   .liquidation-page2 {
     grid-template-areas: "title title" "list1 list1" "list2 list2" "list3 list3";
@@ -565,7 +564,7 @@ a {
   .liquidation-page3-slider {
     grid-template-columns: repeat(auto-fill, 100%);
     justify-content: center;
-    gap: 180px;
+    gap: 135px;
   }
   .liquidation-page3-slider-scroll {
     margin: 0 auto;
@@ -704,7 +703,8 @@ a {
 #liquidation-slider-right {
     position: absolute;
     width: 14px;
-    top: -127px;
+    top: -89px;
+    cursor: pointer;
   }
   #liquidation-slider-left {
     left: 40px;
@@ -734,6 +734,10 @@ a {
     margin: 40px 0;
   }
 }
+.__burger-nav-tel {
+  margin-top: 15px;
+}
+
 .liquidation-page3-slider-close {
   display: none;
 }
