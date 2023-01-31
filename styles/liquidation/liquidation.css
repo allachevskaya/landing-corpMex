@@ -729,6 +729,10 @@ a {
 .liquidation-page5 {
     padding: 40px 20px !important;
   }
+  .liquidation-page3 {
+    gap: 34px;
+    margin: 40px 0;
+  }
 }
 .liquidation-page3-slider-close {
   display: none;
