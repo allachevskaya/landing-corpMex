@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +6,16 @@
   font-family: "Montserrat";
 }
 
-.liquidation-page1,
-.liquidation-page2,
-.liquidation-page3 {
-  padding: 180px 80px;
+a {
+  text-decoration: none;
 }
 
+@font-face {
+  font-family: Montserrat;
+  /* Гарнитура шрифта */
+  src: url(../../font/Montserrat-Light.otf);
+  /* Путь к файлу со шрифтом */
+}
 .liquidation__wrapper {
   width: 100%;
   height: -webkit-max-content;
@@ -18,28 +23,32 @@
   height: max-content;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .liquidation__container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid red;
 }
 .liquidation-page1 {
+  min-height: 424px;
   display: grid;
   grid-template-columns: minmax(300px, 580px) minmax(300px, 472px);
   justify-content: space-evenly;
   gap: 20px;
-  background-color: #001339;
+  padding: 0 80px;
+  background-image: url("../../images/ликвидация/image 8.png");
   color: #FFFFFF;
   font-family: "Montserrat";
   font-style: normal;
   width: 100%;
+  align-items: center;
 }
 .liquidation-page1-text {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  justify-content: center;
 }
 .liquidation-page1-text-title {
   font-weight: 600;
@@ -54,6 +63,7 @@
 }
 .liquidation-page1-form {
   background-color: #FCB900;
+  justify-content: center;
   height: 242px;
   border-radius: 25px;
   display: flex;
@@ -85,11 +95,12 @@
 }
 .liquidation-page2 {
   width: 100%;
+  padding: 80px;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
-  gap: 40px 20px;
+  gap: 40px;
   grid-template-areas: "title title" "list1 list2" "list3 list3";
   background-color: #ffffff;
   font-family: "Montserrat";
@@ -160,12 +171,12 @@
           text-decoration-color: #081B54;
 }
 .liquidation-page3 {
-  background-color: #001339;
+  background-image: url("../../images/ликвидация/image 8.png");
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 80px;
-  padding: 80px;
+  padding: 80px 80px;
   color: #FFFFFF;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -210,7 +221,7 @@
   display: none;
 }
 .liquidation-page4 {
-  padding: 80px;
+  padding: 80px 80px 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -237,7 +248,7 @@
   text-align: center;
 }
 .liquidation-page5 {
-  padding: 80px;
+  padding: 40px 80px;
 }
 .liquidation-page5-title {
   text-align: center;
@@ -248,22 +259,271 @@
   text-transform: uppercase;
 }
 .liquidation-page5-images {
-  padding-top: 80px;
-  display: grid;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  grid-template-columns: minmax(150px, 400px) minmax(300px, 700px) minmax(150px, 400px);
+  min-height: 380px;
   align-items: center;
 }
 .liquidation-page5-images img {
+  height: 100%;
+}
+.liquidation-page6 {
+  padding: 40px 80px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.liquidation-page6-form {
+  background: rgba(142, 209, 252, 0.17);
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  padding: 89px 10px;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.liquidation-page6-form p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  text-align: center;
+  max-width: 500px;
+  color: #081B54;
+}
+.liquidation-page6-btn {
+  background: rgba(252, 185, 0, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 10px 15px;
+}
+.liquidation-page6-btn a {
+  color: #001339;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 27px;
 }
 
-@media (max-width: 800px) {
+.header {
+  width: 100%;
+  height: 116px;
+  background-color: #081B54;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: minmax(219px, 300px) minmax(381px, 800px);
+  gap: 80px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.header-logo p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  max-width: 201px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+.header-nav-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+  color: #FFFFFF;
+}
+.header-tel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: uppercase;
+  margin-left: 50px;
+  color: #FCB900 !important;
+}
+.header-burger {
+  display: none;
+}
+
+.header-nav-link:hover {
+  color: #FCB900;
+}
+
+.footer {
+  min-height: 385px;
+  width: 100%;
+  background-image: url("../../images/ликвидация/image 8.png");
+  display: grid;
+  padding: 100px 80px 80px;
+  grid-template-columns: minmax(263px, 314px) minmax(252px, 318px) minmax(205px, 276px);
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-logo {
+  cursor: pointer;
+  display: flex;
+  color: #FFFFFF;
+  align-items: center;
+  gap: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.footer-logo p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.footer-services {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-services-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FCB900;
+}
+.footer-services-list li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
+}
+.footer-contacts-map {
+  display: grid;
+  gap: 10px;
+}
+.footer-contacts-map a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+.footer-contacts-icons {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.footer-contacts-icons img {
+  width: 38px;
+  height: 35px;
+}
+.footer-contacts p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.footer-tel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #FCB900;
+}
+
+@media (max-width: 1180px) {
+  .header-logo p {
+    font-size: 18px;
+  }
+  .header-nav {
+    gap: 10px;
+  }
+  .header-nav-link {
+    font-size: 18px;
+  }
+  .header-tel {
+    margin: 0;
+    font-size: 18px;
+  }
+  .footer-logo {
+    gap: 5px;
+  }
+  .footer-logo p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 969px) {
+  .header {
+    gap: 15px;
+  }
+  .header-logo {
+    gap: 2px;
+  }
+  .header-logo p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .header-nav-link {
+    font-size: 16px;
+  }
+  .header-tel {
+    font-size: 16px;
+  }
+  .footer {
+    grid-template-columns: repeat(auto-fill, 314px);
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer-services {
+    border-bottom: 1px solid #FCB900;
+    padding-bottom: 30px;
+  }
+  .footer-services-title {
+    text-align: center;
+  }
+  .footer-contacts-map {
+    border-bottom: 1px solid #FCB900;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 804px) {
   .liquidation-page1 {
-    padding: 180px 20px;
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
+    padding: 40px 20px;
   }
   .liquidation-page1-text-title {
     font-size: 25px;
@@ -278,7 +538,7 @@
   }
   .liquidation-page2 {
     grid-template-areas: "title title" "list1 list1" "list2 list2" "list3 list3";
-    padding: 80px 20px;
+    grid-template-rows: 150px auto auto;
     gap: 20px;
   }
   .liquidation-page2-title h4 {
@@ -300,7 +560,7 @@
     margin-top: 15px;
   }
   .liquidation-page3 {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
   .liquidation-page3-slider {
     grid-template-columns: repeat(auto-fill, 100%);
@@ -336,6 +596,9 @@
     font-size: 17px;
     line-height: 25px;
   }
+  .liquidation-page4 {
+    padding: 40px 20px;
+  }
   .liquidation-page4-box p {
     font-size: 18px;
     line-height: 28px;
@@ -343,11 +606,99 @@
     text-align: center;
   }
   .liquidation-page5 {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
   .liquidation-page5-images {
-    grid-template-columns: repeat(auto-fill, 300px);
     gap: 50px;
+    min-height: auto;
+  }
+  .liquidation-page6 {
+    padding: 40px 20px;
+  }
+  .liquidation-page6-form {
+    padding: 40px 20px;
+  }
+  .liquidation-page6-form p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .liquidation-page6-btn a {
+    font-size: 16px;
+  }
+  .header {
+    padding: 20px;
+    min-height: 116px;
+    height: auto;
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-burger {
+    display: block;
+  }
+  .header-burger-icon {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  .header-burger-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 0;
+    opacity: 0;
+  }
+  #toggleMenu {
+    width: 30px;
+    height: 15px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  #toggleMenu span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  #toggleMenu span:nth-child(1) {
+    top: 16px;
+    transform-origin: left center;
+  }
+  #toggleMenu span:nth-child(2) {
+    top: 25px;
+    transform-origin: left center;
+  }
+  #toggleMenu span:nth-child(3) {
+    top: 36px;
+    transform-origin: left center;
+  }
+  #toggleMenu.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+    top: 17px;
+    left: 9px;
+  }
+  #toggleMenu.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  #toggleMenu.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
   }
   #liquidation-slider-left,
 #liquidation-slider-right {
@@ -361,7 +712,31 @@
   #liquidation-slider-right {
     right: 40px;
   }
+  .liquidation-page1,
+.liquidation-page2 {
+    padding: 80px 20px !important;
+  }
+}
+@media (max-width: 604px) {
+  .liquidation-page5-images img {
+    width: 300px;
+    height: auto;
+  }
+  .liquidation-page1,
+.liquidation-page2,
+.liquidation-page3,
+.liquidation-page4,
+.liquidation-page5 {
+    padding: 40px 20px !important;
+  }
 }
 .liquidation-page3-slider-close {
   display: none;
+}
+
+.openNav {
+  height: auto;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  margin-top: 21px;
 }/*# sourceMappingURL=liquidation.css.map */
