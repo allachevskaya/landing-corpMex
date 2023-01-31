@@ -619,7 +619,7 @@ a {
             border-bottom: 1px solid #FCB900;
             padding-bottom: 30px;
 
-           
+
         }
 
         &-contacts-map {
@@ -629,6 +629,98 @@ a {
     }
 }
 
+
+.liquidation__modal {
+    min-height: 800px;
+    width: 618px;
+    background-color: #FFFFFF;
+    position: fixed;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 40px;
+
+    &-close {
+        display: none;
+    }
+
+    &-title {
+        
+        max-width: 562px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 51px;
+        text-align: center;
+
+        color: #220033;
+    }
+
+    & form {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
+        & input {
+            border: 1px solid rgba(34, 0, 51, 0.2);
+            border-radius: 12px;
+            outline: none;
+            padding: 12px 17px;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        & button {
+            background: #FCB900;
+            border: 1px solid rgba(34, 0, 51, 0.2);
+            border-radius: 12px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            padding: 14px 28px;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+
+    &-description {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        & p {
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+
+            color: rgba(0, 0, 0, 0.2);
+
+            & a {
+                color: #FCB900
+            }
+        }
+
+        & h1 {
+            font-size: 25px;
+            font-weight: 800;
+        }
+    }
+}
 
 @media (max-width:804px) {
     .liquidation {
@@ -785,6 +877,11 @@ a {
                 font-size: 16px;
             }
         }
+    }
+
+    .liquidation__modal {
+        width: 80%;
+        min-width: 300px;
     }
 
     .header {
@@ -960,12 +1057,50 @@ a {
         gap: 34px;
         margin: 40px 0;
     }
+
+    .liquidation__modal {
+        gap:0;
+        width: 90%;
+        padding: 40px 15px;
+        min-height: calc(100vh - 80px);
+        &-title {
+            font-size: 22px;
+            line-height: 35px;
+        }
+
+        &-description {
+            gap: 9px;
+
+            & p {
+                font-size: 14px;
+                line-height: 23px;
+            }
+        }
+        & form{
+            gap:12px;
+        
+        & input, &  button {
+            width: 100%;
+            font-size: 14px;
+            line-height: 13px;
+        }
+    }
+    }
 }
 
 
-.__burger-nav-tel{
+
+
+.__burger-nav-tel {
     margin-top: 15px;
 }
+
+
+
+
+
+
+
 
 
 .liquidation-page3-slider-close {

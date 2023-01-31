@@ -122,7 +122,8 @@
                         <p class="liquidation-page3-slider-close">Даже не представлял, что столкнусь с принудительной
                             формой ликвидации своего небольшого бизнеса, инициатором которой станет наша доблестная
                             налоговая. Думал, справлюсь сам с судебными моментами. Но оказалось не всё так просто.
-                            Обратился к компании Корпоративная механика и, как оказалось не зря. Сам процесс провели довольно грамотно и с минимальными
+                            Обратился к компании Корпоративная механика и, как оказалось не зря. Сам процесс провели
+                            довольно грамотно и с минимальными
                             затратами для меня. Эти ребята знают своё дело!</p>
                         <p class="liquidation-page3-slider-close">Решил закрыть небольшое ИП. Без специалистов это
                             сделать не так-то просто, знаю по опыту открытия. Поэтому сразу обратился к
@@ -184,10 +185,7 @@
         <footer class="footer">
             <div class="footer-logo">
                 <a href="#">
-                    <img 
-                        src="../images/ликвидация/logo.svg"
-                        alt="корпоративная механика"
-                    >
+                    <img src="../images/ликвидация/logo.svg" alt="корпоративная механика">
                 </a>
                 <p>
                     корпоративная
@@ -196,21 +194,31 @@
             </div>
             <div class="footer-services">
                 <div class="footer-services-title">
-                    наши УСЛУГИ: 
+                    наши УСЛУГИ:
                 </div>
                 <div class="footer-services-list">
-                    <a href=""><li>регистрацией бизнеса </li></a>
-                    <a href=""><li>аутсорсинг бухгалтерии</li></a>
-                    <a href=""><li>налоговый юрист</li></a>
-                    <a href=""><li>экспресс - аудит </li></a>
+                    <a href="">
+                        <li>регистрацией бизнеса </li>
+                    </a>
+                    <a href="">
+                        <li>аутсорсинг бухгалтерии</li>
+                    </a>
+                    <a href="">
+                        <li>налоговый юрист</li>
+                    </a>
+                    <a href="">
+                        <li>экспресс - аудит </li>
+                    </a>
                 </div>
             </div>
             <div class="footer-contacts">
                 <a class="footer-tel" href="tel:+74957776669">+7 (495) 777 66 69</a>
                 <div class="footer-contacts-map">
                     <a href="mailto:info@corpmech.ru">info@corpmech.ru</a>
-                    <a href="https://yandex.ru/maps/213/moscow/house/prospekt_mira_102k1/Z04YcARmT00HQFtvfXRxcXlqYQ==/?ll=37.636679%2C55.800595&z=17.04">Проспект Мира 102, <br>
-                        корпус 1 офис 1203 
+                    <a
+                        href="https://yandex.ru/maps/213/moscow/house/prospekt_mira_102k1/Z04YcARmT00HQFtvfXRxcXlqYQ==/?ll=37.636679%2C55.800595&z=17.04">Проспект
+                        Мира 102, <br>
+                        корпус 1 офис 1203
                     </a>
                 </div>
                 <div class="footer-contacts-icons">
@@ -227,17 +235,43 @@
                         <img src="../images/ликвидация/whatsApp.png" alt="whatsApp">
                     </a>
                 </div>
-                <p>Подпишитесь на нас в  социальных сетях, чтобы быть в курсе новостей!</p>
+                <p>Подпишитесь на нас в социальных сетях, чтобы быть в курсе новостей!</p>
             </div>
         </footer>
+
+        <section class="liquidation__modal ">
+            <div class="liquidation__modal-title">
+                Оставьте заявку, и мы свяжемся с Вами в течение 15 минут
+            </div>
+            <form action="">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" name="" id="" placeholder="Телефон для связи">
+                <button type="submit">Получить консультацию</button>
+            </form>
+            <div class="liquidation__modal-description">
+                <p> Отправляя заявку, Вы соглашаетесь на обработку с условиями
+                    <a href="">обработки персональных данных</a>
+                </p>
+                <h1>ИЛИ</h1>
+                <p>
+                    Eсли Вы не хотите ждать, свяжитесь
+                    с нами <a href="tel:+74957776669">+7(495) 777 66 69</a>
+                </p>
+            </div>
+        </section>
     </div>
+
+
     <script>
         const btnPred = document.querySelector('#liquidation-slider-left');
         const btnNext = document.querySelector('#liquidation-slider-right');
         const reviews = document.querySelectorAll('.liquidation-page3-slider-scroll p');
+        const iconMenu = document.querySelector('#toggleMenu');
+        const navMenu = document.querySelector('.header-burger-nav');
         let state = 0;
 
         getSlider();
+
         function getSlider() {
 
             const activeSlide = index => {
@@ -281,8 +315,6 @@
             document.querySelector(this).classList.toggle('open');
         });
 
-        const iconMenu = document.querySelector('#toggleMenu');
-        const navMenu = document.querySelector('.header-burger-nav');
         iconMenu.addEventListener('click', () => {
             iconMenu.classList.toggle('open');
             navMenu.classList.toggle('openNav')

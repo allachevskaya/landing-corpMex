@@ -518,6 +518,84 @@ a {
     padding-bottom: 30px;
   }
 }
+.liquidation__modal {
+  min-height: 800px;
+  width: 618px;
+  background-color: #FFFFFF;
+  position: fixed;
+  border-radius: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+  gap: 40px;
+}
+.liquidation__modal-close {
+  display: none;
+}
+.liquidation__modal-title {
+  max-width: 562px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 51px;
+  text-align: center;
+  color: #220033;
+}
+.liquidation__modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.liquidation__modal form input {
+  border: 1px solid rgba(34, 0, 51, 0.2);
+  border-radius: 12px;
+  outline: none;
+  padding: 12px 17px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.liquidation__modal form button {
+  background: #FCB900;
+  border: 1px solid rgba(34, 0, 51, 0.2);
+  border-radius: 12px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  padding: 14px 28px;
+  cursor: pointer;
+  outline: none;
+}
+.liquidation__modal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.liquidation__modal-description p {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+}
+.liquidation__modal-description p a {
+  color: #FCB900;
+}
+.liquidation__modal-description h1 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
 @media (max-width: 804px) {
   .liquidation-page1 {
     grid-template-columns: repeat(auto-fill, 300px);
@@ -623,6 +701,10 @@ a {
   }
   .liquidation-page6-btn a {
     font-size: 16px;
+  }
+  .liquidation__modal {
+    width: 80%;
+    min-width: 300px;
   }
   .header {
     padding: 20px;
@@ -732,6 +814,31 @@ a {
   .liquidation-page3 {
     gap: 34px;
     margin: 40px 0;
+  }
+  .liquidation__modal {
+    gap: 0;
+    width: 90%;
+    padding: 40px 15px;
+    min-height: calc(100vh - 80px);
+  }
+  .liquidation__modal-title {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .liquidation__modal-description {
+    gap: 9px;
+  }
+  .liquidation__modal-description p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .liquidation__modal form {
+    gap: 12px;
+  }
+  .liquidation__modal form input, .liquidation__modal form button {
+    width: 100%;
+    font-size: 14px;
+    line-height: 13px;
   }
 }
 .__burger-nav-tel {
